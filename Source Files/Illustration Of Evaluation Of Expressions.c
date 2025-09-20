@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     float a, b, c, x, y, z;
 
@@ -16,5 +15,7 @@ void main()
     printf("a - b / 3 + c * 2 - 1: %f\n", x);
     printf("a - b (3 + c) * (2 - 1): %f\n", y);
     printf("a - (b / (3 + c) * 2) - 1: %f", z);
-    getch();
+    getchar();
+    
+    return 0;
 }

@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     typedef int quantity;
     typedef float lenght;
@@ -14,5 +13,6 @@ void main()
 
     printf("Quantity of Q1 and Q2: %d and %d\n", q1, q2);
     printf("Lenght of L1 and L2: %.2f and %.2f\n", l1, l2);
-    getch();
+    
+    return 0;
 }

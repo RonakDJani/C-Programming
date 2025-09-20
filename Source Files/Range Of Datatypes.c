@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <conio.h>
 #include <limits.h>
 #include <float.h>
 
-void main()
+int main()
 {
     int var1 = INT_MIN;
     int var2 = INT_MAX;
@@ -45,5 +44,6 @@ void main()
     printf("FLOAT: %e to %e\n", var21, var22);
     printf("DOUBLE: %le to %le\n", var23, var24);
     printf("LONG DOUBLE: %Le to %Le\n", var25, var26);
-    getch();
+    
+    return 0;
 }

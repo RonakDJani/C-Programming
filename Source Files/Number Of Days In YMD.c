@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     int day, month, year;
     printf("Enter number of days: ");
@@ -14,5 +13,6 @@ void main()
     printf("Year: %d\n", year);
     printf("Months: %d\n", month);
     printf("Days: %d", day);
-    getch();
+    
+    return 0;
 }

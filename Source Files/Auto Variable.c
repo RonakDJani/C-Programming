@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     auto int a;
     a = 10;
@@ -11,8 +10,8 @@ void main()
     {
         auto int a;
         a = 20;
-        printf("A of a block in main: %d", a);
+        printf("A of a block inside main: %d", a);
     }
-
-    getch();
+    
+    return 0;
 }

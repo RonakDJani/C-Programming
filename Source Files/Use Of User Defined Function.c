@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <conio.h>
 
-int mul(int x, int y);
+int mul(int j, int k);
 
-void main()
+int main()
 {
     int a, b, c;
 
@@ -12,7 +11,8 @@ void main()
     c = mul(a, b);
 
     printf("Multiplication of %d and %d is %d", a, b, c);
-    getch();
+    
+    return 0;
 }
 
 int mul(int x, int y)
@@ -21,5 +21,5 @@ int mul(int x, int y)
 
     z = x * y;
 
-    return(z);
+    return z;
 }

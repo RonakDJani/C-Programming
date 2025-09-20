@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     int num_val, count;
     float total, average, value;
@@ -23,5 +22,6 @@ void main()
 
     printf("Total: %.2f\n", total);
     printf("Average: %.2f", average);
-    getch();
+    
+    return 0;
 }

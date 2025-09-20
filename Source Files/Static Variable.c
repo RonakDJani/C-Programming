@@ -1,27 +1,26 @@
 #include <stdio.h>
-#include <conio.h>
-#include "Resource Files/Static Include.c"
 
 static int globalCount = 0;
 
 void staticExample();
 
-void main()
+int main()
 {
     staticExample();
     globalCount += 5;
-    printf("Global value (in main): %d\n", globalCount);
-    externExample();
+    printf("globalCount is accessed and modified (in main function): %d\n", globalCount);
     staticExample();
     globalCount += 5;
-    printf("Global value (in main): %d\n", globalCount);
-    externExample();
+    printf("globalCount is accessed and modified (in main function): %d\n", globalCount);
     staticExample();
     globalCount += 5;
-    printf("Global value (in main): %d\n", globalCount);
-    externExample();
-    printf("Extern global value (in main file): %d\n", externGlobalCount + 5);
-    getch();
+    printf("globalCount is accessed and modified (in main function): %d\n", globalCount);
+    printf("The variable globalCount is accessible throughout the program.\n");
+    printf("The variable count is only accessible in the function staticExample().\n");
+    
+    /* count++; This will give an error as count is not accessible here. */
+
+    return 0;
 }
 
 void staticExample()
@@ -32,5 +31,5 @@ void staticExample()
     globalCount += 5;
 
     printf("Count: %d\n", count);
-    printf("Global value (in function): %d\n", globalCount);
+    printf("globalCount is accessed and modified (in other function): %d\n", globalCount);
 }

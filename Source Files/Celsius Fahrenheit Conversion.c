@@ -1,12 +1,11 @@
 #include <stdio.h>
-#include <conio.h>
 
 void CtoF();
 void FtoC();
 
 float temp;
 
-void main()
+int main()
 {
     int option;
 
@@ -29,7 +28,8 @@ void main()
         printf("Invalid option!");
         break;
     }
-    getch();
+    
+    return 0;
 }
 
 void CtoF()

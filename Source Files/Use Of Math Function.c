@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <conio.h>
 #include <math.h>
 
 #define PI 3.1416
 #define MAX 180
 
-void main()
+int main()
 {
     int angle;
     float x, y;
@@ -23,5 +22,6 @@ void main()
 
         angle = angle + 10;
     }
-    getch();
+    
+    return 0;
 }

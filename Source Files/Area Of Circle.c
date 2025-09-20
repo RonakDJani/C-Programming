@@ -1,14 +1,14 @@
 #include <stdio.h>
-#include <conio.h>
 
 #define PI 3.1416
 
-void main()
+int main()
 {
-    float a, r = 3;
+    float area, radius = 3;
 
-    a = PI * (r * r);
+    area = PI * (radius * radius);
 
-    printf("Radius: %.2f\tArea: %.2f", r, a);
-    getch();
+    printf("Radius: %.2f\tArea: %.2f", radius, area);
+    
+    return 0;
 }

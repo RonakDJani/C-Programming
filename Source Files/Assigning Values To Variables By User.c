@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     float x, p;
     double y, q;
@@ -28,5 +27,6 @@ void main()
     printf("y = %.12lf\n", y);
     printf("y = %lf\n", y);
     printf("k = %u\tp = %f\tq = %.12lf", k, p, q);
-    getch();
+    
+    return 0;
 }

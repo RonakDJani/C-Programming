@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     enum day {mon = 1, tue, wed, thu, fri, sat, sun} week_st, week_end;
     int opt;
@@ -25,5 +24,5 @@ void main()
         printf("Please enter a valid number!");
     }
 
-    getch();
+    return 0;
 }

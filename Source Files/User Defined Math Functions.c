@@ -1,10 +1,9 @@
 #include <stdio.h>
-#include <conio.h>
 
 int add(int x, int y);
 int sub(int x, int y);
 
-void main()
+int main()
 {
     int a = 20, b = 10, c;
 
@@ -13,7 +12,8 @@ void main()
     
     c = sub(a, b);
     printf("%d - %d = %d", a, b, c);
-    getch();
+    
+    return 0;
 }
 
 int add(int x, int y)
@@ -22,7 +22,7 @@ int add(int x, int y)
 
     z = x + y;
 
-    return(z);
+    return z;
 }
 
 int sub(int x, int y)
@@ -31,5 +31,5 @@ int sub(int x, int y)
 
     z = x - y;
 
-    return(z);
+    return z;
 }

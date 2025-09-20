@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     printf("Size of datatypes:\n");
     printf("SHORT INT: %d bytes\n", sizeof(short int));
@@ -22,5 +21,6 @@ void main()
     printf("CHAR: %d byte\n", sizeof(char));
     printf("UNSIGNED CHAR: %d byte\n", sizeof(unsigned char));
     printf("SIGNED CHAR: %d byte\n", sizeof(unsigned char));
-    getch();
+    
+    return 0;
 }

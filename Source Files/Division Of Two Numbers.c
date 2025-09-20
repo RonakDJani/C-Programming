@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     float divisor, divider, result;
 
@@ -11,5 +10,6 @@ void main()
     result = divisor / divider;
 
     printf("%f %c %f = %f", divisor, 246, divider, result);
-    getch();
+    
+    return 0;
 }

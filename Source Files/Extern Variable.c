@@ -1,27 +1,26 @@
 #include <stdio.h>
-#include <conio.h>
-#include "Resource Files/Extern Include.c"
+#include "Resource Files/Extern Include.h"
 
-extern int globalCount;
-extern void externExample2();
+int globalCount = 0;
 
 void externExample();
 
-void main()
+int main()
 {
     externExample();
     globalCount += 5;
-    printf("Global value (in main): %d\n", globalCount);
+    printf("globalCount is accessed and modified (in main function): %d\n", globalCount);
     externExample2();
     externExample();
     globalCount += 5;
-    printf("Global value (in main): %d\n", globalCount);
+    printf("globalCount is accessed and modified (in main function): %d\n", globalCount);
     externExample2();
     externExample();
     globalCount += 5;
-    printf("Global value (in main): %d\n", globalCount);
+    printf("globalCount is accessed and modified (in main function): %d\n", globalCount);
     externExample2();
-    getch();
+    
+    return 0;
 }
 
 void externExample()
@@ -32,5 +31,5 @@ void externExample()
     globalCount += 5;
 
     printf("Count: %d\n", count);
-    printf("Global value (in function): %d\n", globalCount);
+    printf("globalCount is accessed and modified (in other function): %d\n", globalCount);
 }

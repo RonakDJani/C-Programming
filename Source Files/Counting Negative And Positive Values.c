@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     int number;
     int negative_count = 0, positive_count = 0;
@@ -29,5 +28,6 @@ void main()
 
     printf("Positive numbers: %d\n", positive_count);
     printf("Negative numbers: %d\n", negative_count);
-    getch();
+    
+    return 0;
 }

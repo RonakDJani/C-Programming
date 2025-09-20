@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     float rice, suger;
 
@@ -12,5 +11,6 @@ void main()
     printf("Item\t\tPrice\n");
     printf("Rice:\t\t%.2f\n", rice);
     printf("Suger:\t\t%.2f", suger);
-    getch();
+    
+    return 0;
 }

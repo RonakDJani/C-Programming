@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     printf("*\n*\t*\n*\t*\t*\n*\t*\t*\t*");
-    getch();
+    
+    return 0;
 }

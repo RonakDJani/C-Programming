@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     float a, b;
     int c;
@@ -16,5 +15,6 @@ void main()
     printf("Value of c (int): %d\n", c);
     printf("The sum of %f and %f is %f\n", a, b, a + b);
     printf("The sum of a and b is a fractional value, the value stored in integer variable c truncates after decimal point (%d in this case).", c);
-    getch();
+    
+    return 0;
 }

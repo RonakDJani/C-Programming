@@ -1,11 +1,10 @@
 #include <stdio.h>
-#include <conio.h>
 
 #define F_LOW 0
 #define F_MAX 250
 #define STEP 25
 
-void main()
+int main()
 {
     typedef float TEMPERATURE;
     TEMPERATURE fahrenheit, celsius;
@@ -22,5 +21,6 @@ void main()
 
         fahrenheit = fahrenheit + STEP;
     }
-    getch();
+    
+    return 0;
 }

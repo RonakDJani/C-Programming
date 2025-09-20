@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     int a, b, c, d;
     a = 15;
@@ -16,7 +15,9 @@ void main()
     printf("A / B = %d\n", a / b);
     printf("A %% B = %d\n", a % b);
     printf("A *= B = %d\n", a *= b);
-    printf("C > D = %d\n", (c > b) ? 1 : 0);
+    printf("C > D = %d\n", (c > d) ? 1 : 0);
     printf("C < D = %d", (c < d) ? 1 : 0);
-    getch();
+    getchar();
+    
+    return 0;
 }

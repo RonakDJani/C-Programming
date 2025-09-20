@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <conio.h>
 
 double harmonic_sum(int n);
 
-void main()
+int main()
 {
     int n;
 
@@ -19,7 +18,8 @@ void main()
         double result = harmonic_sum(n);
         printf("The sum of harmonic series up to %d terms is %.5f", n, result);
     }
-    getch();
+    
+    return 0;
 }
 
 double harmonic_sum(int n)

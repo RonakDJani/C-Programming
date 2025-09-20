@@ -1,10 +1,9 @@
 #include <stdio.h>
-#include <conio.h>
 
 #define PERIOD 10
 #define PRINCIPAL 5000.00
 
-void main()
+int main()
 {
     int year;
     float amount, value, inrate;
@@ -12,6 +11,8 @@ void main()
     amount = PRINCIPAL;
     inrate = 0.11;
     year = 0;
+
+    /* PRINCIPAL = 10000.00; This line will cause a compilation error since PRINCIPAL is defined as a constant. */
 
     while (year <= PERIOD)
     {
@@ -21,5 +22,6 @@ void main()
         year = year + 1;
         amount = value;
     }
-    getch();
+    
+    return 0;
 }

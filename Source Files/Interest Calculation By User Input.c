@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     int year, period;
     float amount, inrate, value;
@@ -22,5 +21,6 @@ void main()
         amount = value;
         year = year + 1;
     }
-    getch();
+    
+    return 0;
 }

@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     float x, y, z;
 
@@ -11,5 +10,6 @@ void main()
     printf("x: %.2f\ty: %.2f\n", x, y);
     printf("Sum: %.2f\tDifference: %.2f\n", x + y, x - y);
     printf("Product: %.2f\tDivision: %.2f", x * y, x / y);
-    getch();
+    
+    return 0;
 }

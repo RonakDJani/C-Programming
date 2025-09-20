@@ -1,7 +1,6 @@
 #include <stdio.h>
-#include <conio.h>
 
-void main()
+int main()
 {
     int i = 0;
 
@@ -11,5 +10,6 @@ void main()
 
         i++;
     }
-    getch();
+    
+    return 0;
 }
