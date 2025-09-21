@@ -9,7 +9,7 @@ int main()
 {
     double time;
     float reliability;
-    int i, rows;
+    int i, columns;
 
     for(i = 1; i <= 27; ++i)
     {
@@ -21,9 +21,9 @@ int main()
     for(time = 0; time <= MAX_TIME; time += TIME_STEP)
     {
         reliability = exp(-LAMBDA * time);
-        rows = (int)(50*reliability + 0.5); // Round to nearest integer
+        columns = (int)(50*reliability + 0.5); // Round to nearest integer
         printf("  |");
-        for(i = 1; i <= rows; ++i)
+        for(i = 1; i <= columns; ++i)
         {
             printf("*");
         }
